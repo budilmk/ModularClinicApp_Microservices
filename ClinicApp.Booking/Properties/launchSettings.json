@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ClinicApp.Booking": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

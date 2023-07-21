@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ClinicApp.Authentication": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
