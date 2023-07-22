@@ -1,10 +1,8 @@
 ﻿using Booking.Domain.Entities;
-using Booking.Shared;
-using Booking.Domain.Contracts;
-using Booking.Domain.Exceptions;
-using Booking.Infrastructure.Repositories;
+using SlotManagement.Repositories;
 
-namespace Booking.API.Services
+
+namespace SlotManagement.Services
 {
     public class SlotService : ISlotService
     {
@@ -84,4 +82,6 @@ namespace Booking.API.Services
 
     }
 }
+
+
 

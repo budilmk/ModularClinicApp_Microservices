@@ -1,9 +1,8 @@
 ﻿using Booking.Domain.Entities;
 using Booking.Infrastructure.Database;
-using Booking.Domain.Contracts;
 
 
-namespace Booking.Infrastructure.Repositories;
+namespace SlotManagement.Repositories;
 
 public class SlotRepo : ISlotRepository
 {
@@ -100,5 +99,6 @@ public class SlotRepo : ISlotRepository
 
 
 }
+
 
 

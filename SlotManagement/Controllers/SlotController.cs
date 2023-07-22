@@ -1,10 +1,11 @@
 ﻿using Booking.Application.Dtos;
-using Booking.Shared;
+using SlotManagement.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Runtime.InteropServices;
 
 
-namespace Booking.API.Controllers
+namespace SlotManagement.Controllers
 {
     [ApiController]
     [Route("/slots")]
@@ -79,5 +80,7 @@ namespace Booking.API.Controllers
 
     }
 }
+
+
 
 

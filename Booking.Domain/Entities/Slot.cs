@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Runtime.InteropServices;
+
 
 namespace Booking.Domain.Entities
 {

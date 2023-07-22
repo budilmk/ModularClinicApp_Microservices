@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -23,7 +23,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Authentication.API\Authentication.API.csproj" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Booking.Application\Booking.Application.csproj" />
     <ProjectReference Include="..\Booking.Domain\Booking.Domain.csproj" />
     <ProjectReference Include="..\Booking.Shared\Booking.Shared.csproj" />
   </ItemGroup>

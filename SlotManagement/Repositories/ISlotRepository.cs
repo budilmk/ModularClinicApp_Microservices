@@ -1,6 +1,6 @@
 ﻿using Booking.Domain.Entities;
 
-namespace Booking.Domain.Contracts
+namespace SlotManagement.Repositories
 {
     public interface ISlotRepository
     {

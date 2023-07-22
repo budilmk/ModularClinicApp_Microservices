@@ -2,7 +2,9 @@
 using Booking.Shared;
 using Microsoft.AspNetCore.Mvc;
 using Booking.Application.Dtos;
+using SlotManagement.Services;
 using Microsoft.Extensions.Logging;
+using Notification.Module;
 
 namespace Booking.API.Controllers
 {
@@ -11,13 +13,15 @@ namespace Booking.API.Controllers
     {
         private readonly IAppointmentService _appointmentService;
         private readonly ISlotService _slotService;
+        private readonly INotificationService _notificationService;
         private readonly ILogger<AppointmentController> _logger;
 
-        public AppointmentController(IAppointmentService appointmentService, ISlotService slotService, ILogger<AppointmentController> logger)
+        public AppointmentController(IAppointmentService appointmentService, ISlotService slotService, INotificationService notificationService, ILogger<AppointmentController> logger)
         {
             _appointmentService = appointmentService;
             _slotService = slotService;
             _logger = logger;
+            _notificationService = notificationService;
         }
 
         //Question 2b To book an appointment and update slot reservation status
@@ -26,9 +30,7 @@ namespace Booking.API.Controllers
         {
             await _appointmentService.CreateAppointment(request.patientName, request.patientId, request.slotId); //create new appointment
             await _slotService.UpdateSlotReservation(true, request.slotId); //update slot status to true
-            _logger.LogInformation("Patient Name: ${PatientName}", request.patientName);
-            _logger.LogInformation("Doctor Name: " + _slotService.GetDoctorNameBySlotId(request.slotId));
-            _logger.LogInformation("Appointment Time: ${Time}", _slotService.GetAppointmentTimeBySlotId(request.slotId));
+            await _notificationService.CreateNotification(request.patientName, request.slotId);
 
 
             return Ok("Appointment Created...");

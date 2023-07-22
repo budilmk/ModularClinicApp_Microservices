@@ -2,6 +2,8 @@
 using Booking.Domain.Contracts;
 using Booking.Shared;
 using Booking.Infrastructure.Repositories;
+using SlotManagement.Services;
+using SlotManagement.Repositories;
 using Booking.Infrastructure.Database;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;

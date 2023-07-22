@@ -1,6 +1,6 @@
 ﻿using Booking.Domain.Entities;
 
-namespace Booking.Shared
+namespace SlotManagement.Services
 {
     public interface ISlotService
     {

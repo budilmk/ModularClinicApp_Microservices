@@ -1,5 +1,5 @@
 ﻿using Booking.Domain.Entities;
-using Booking.Infrastructure.Repositories;
+using SlotManagement.Repositories;
 using Booking.Domain.Contracts;
 using Booking.Shared;
 using Microsoft.Extensions.Hosting;

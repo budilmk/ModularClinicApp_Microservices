@@ -27,6 +27,8 @@
     <ProjectReference Include="..\Booking.Domain\Booking.Domain.csproj" />
     <ProjectReference Include="..\Booking.Infrastructure\Booking.Infrastructure.csproj" />
     <ProjectReference Include="..\Booking.Shared\Booking.Shared.csproj" />
+    <ProjectReference Include="..\Notification.Application\Notification.Module.csproj" />
+    <ProjectReference Include="..\SlotManagement\SlotManagement.csproj" />
   </ItemGroup>
 
 </Project>
