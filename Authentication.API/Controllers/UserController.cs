@@ -17,9 +17,21 @@ namespace Authentication.API.Controllers
         [HttpPost("/login")]
         public async Task<IActionResult> Post([FromBody] LoginRequest request)
         {
-            if (request.UserName == "admin")
-                return Ok(_jwtCreator.GenerateJsonWebToken("admin"));
-            return Unauthorized();
+            if (request.UserName == "admin") 
+            {
+                var token = _jwtCreator.GenerateJsonWebToken("admin");
+                var loginResponse = new LoginResponse { token = token };
+                
+                return await Task.FromResult<IActionResult>(Ok(loginResponse));
+
+            }
+
+            return await Task.FromResult<IActionResult>(Unauthorized());
         }
+
+                    
+
+      
+        
     }
 }
