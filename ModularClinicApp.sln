@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Managament.Repositories", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Application", "Booking.Application\Booking.Application.csproj", "{734A02FA-3ED3-4B1A-8798-3D3590A90C07}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKernel", "{872F913F-085F-4EC8-AD9C-7D27B830DF8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedKernel.Infrastructure", "Extensions\SharedKernel.Infrastructure.csproj", "{E09B3B96-2CB1-4CED-B790-5A5A5D0B3EE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,10 @@ Global
 		{734A02FA-3ED3-4B1A-8798-3D3590A90C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{734A02FA-3ED3-4B1A-8798-3D3590A90C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{734A02FA-3ED3-4B1A-8798-3D3590A90C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E09B3B96-2CB1-4CED-B790-5A5A5D0B3EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E09B3B96-2CB1-4CED-B790-5A5A5D0B3EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E09B3B96-2CB1-4CED-B790-5A5A5D0B3EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E09B3B96-2CB1-4CED-B790-5A5A5D0B3EE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,6 +122,8 @@ Global
 		{E0A7B8F4-A798-456E-957D-D61DB915E10E} = {73D91030-887F-45A0-B2AC-4DEAC7FAAE36}
 		{EF5799A3-0561-40E1-BBC4-27BACE576B80} = {73D91030-887F-45A0-B2AC-4DEAC7FAAE36}
 		{734A02FA-3ED3-4B1A-8798-3D3590A90C07} = {19576C42-A45B-4C20-AE60-010D1A12D5F7}
+		{872F913F-085F-4EC8-AD9C-7D27B830DF8E} = {8E885704-A765-4831-A687-5CF843E754CC}
+		{E09B3B96-2CB1-4CED-B790-5A5A5D0B3EE6} = {872F913F-085F-4EC8-AD9C-7D27B830DF8E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7DC9821-75F4-45D8-8A80-227723A5A1AB}

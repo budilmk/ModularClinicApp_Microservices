@@ -1,12 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Authentication.API.Dtos;
+using Authentication.API.Security;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Authentication.API.Controllers
 {
-    internal class Class1
+    [Route("/AuthModule")]
+    public class UserController : ControllerBase
     {
+        private readonly JwtCreator _jwtCreator;
+
+        public UserController(JwtCreator jwtCreator)
+        {
+            _jwtCreator = jwtCreator;
+        }
+
+        [HttpPost("/login")]
+        public async Task<IActionResult> Post([FromBody] LoginRequest request)
+        {
+            if (request.UserName == "admin")
+                return Ok(_jwtCreator.GenerateJsonWebToken("admin"));
+            return Unauthorized();
+        }
     }
 }
