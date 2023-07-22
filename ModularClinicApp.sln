@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bootstrapper", "Bootstrappe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{8E885704-A765-4831-A687-5CF843E754CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicApp.Bootstrapper", "ClinicApp.Bootstrapper\ClinicApp.Bootstrapper.csproj", "{7C033ED9-B079-4983-9770-81A08E96F64A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicApp.Bootstrapper", "ClinicApp.Bootstrapper\ClinicApp.Bootstrapper.csproj", "{7C033ED9-B079-4983-9770-81A08E96F64A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{92081540-2AE6-4FD8-B24B-862218C0D414}"
 EndProject
@@ -17,31 +17,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Management", "Management", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notification", "Notification", "{FA11C7D2-D6CE-4559-A9CD-05FEBEA6A575}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.API", "Authentication.API\Authentication.API.csproj", "{5FAB4443-8618-4863-BA3D-7D02F7054B39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication.API", "Authentication.API\Authentication.API.csproj", "{5FAB4443-8618-4863-BA3D-7D02F7054B39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.API", "Booking.API\Booking.API.csproj", "{E6520D4F-10D5-4E62-867F-C9FD9571AEF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.API", "Booking.API\Booking.API.csproj", "{E6520D4F-10D5-4E62-867F-C9FD9571AEF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Domain", "Booking.Domain\Booking.Domain.csproj", "{A3FC310F-8D5D-4655-AD46-D99C74AD2C3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Domain", "Booking.Domain\Booking.Domain.csproj", "{A3FC310F-8D5D-4655-AD46-D99C74AD2C3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Infrastructure", "Booking.Infrastructure\Booking.Infrastructure.csproj", "{7539A79F-6AF0-4421-91BD-FCAEBF27CABE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Infrastructure", "Booking.Infrastructure\Booking.Infrastructure.csproj", "{7539A79F-6AF0-4421-91BD-FCAEBF27CABE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Shared", "Booking.Shared\Booking.Shared.csproj", "{F2860089-6126-49ED-8590-3E4D277EB780}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Shared", "Booking.Shared\Booking.Shared.csproj", "{F2860089-6126-49ED-8590-3E4D277EB780}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.API", "Notification.API\Notification.API.csproj", "{83F4AD63-158C-48E8-91D2-3BE8E27A2C72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification.API", "Notification.API\Notification.API.csproj", "{83F4AD63-158C-48E8-91D2-3BE8E27A2C72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.Application", "Notification.Application\Notification.Application.csproj", "{F0DBDED1-45FD-458E-A317-998245F75AEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification.Application", "Notification.Application\Notification.Application.csproj", "{F0DBDED1-45FD-458E-A317-998245F75AEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Controllers", "Management.Controllers\Management.Controllers.csproj", "{E6A961C0-5991-4EED-8001-E5A9A9B3C04E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.Controllers", "Management.Controllers\Management.Controllers.csproj", "{E6A961C0-5991-4EED-8001-E5A9A9B3C04E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Management.Services", "Management.Services\Management.Services.csproj", "{E0A7B8F4-A798-456E-957D-D61DB915E10E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Management.Services", "Management.Services\Management.Services.csproj", "{E0A7B8F4-A798-456E-957D-D61DB915E10E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Managament.Repositories", "Managament.Repositories\Managament.Repositories.csproj", "{EF5799A3-0561-40E1-BBC4-27BACE576B80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Managament.Repositories", "Managament.Repositories\Managament.Repositories.csproj", "{EF5799A3-0561-40E1-BBC4-27BACE576B80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booking.Application", "Booking.Application\Booking.Application.csproj", "{734A02FA-3ED3-4B1A-8798-3D3590A90C07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Booking.Application", "Booking.Application\Booking.Application.csproj", "{734A02FA-3ED3-4B1A-8798-3D3590A90C07}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKernel", "{872F913F-085F-4EC8-AD9C-7D27B830DF8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedKernel.Infrastructure", "Extensions\SharedKernel.Infrastructure.csproj", "{E09B3B96-2CB1-4CED-B790-5A5A5D0B3EE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedKernel.Infrastructure", "Extensions\SharedKernel.Infrastructure.csproj", "{E09B3B96-2CB1-4CED-B790-5A5A5D0B3EE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

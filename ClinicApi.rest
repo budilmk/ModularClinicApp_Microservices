@@ -1,0 +1,118 @@
+@url = http://localhost:5249
+
+###
+POST {{url}}/slots
+Content-Type: application/json
+
+{
+    "time": "24/7/2023 05:30:00",
+    "doctorName": "budi",
+    "doctorId": "4ceaa21b-c582-429b-a314-cf32275b1f4a",
+    "cost": 500
+}
+
+###
+POST {{url}}/appointments
+Content-Type: application/json
+
+{
+    "patientName": "John",
+    "PatientId": "4ceaa21b-c582-429b-a314-cf32275b1f4b",
+    "slotId": "11612437-1a47-4c6d-8c2d-9e1cf9f1b3d9"
+}
+
+###
+POST {{url}}/slots/doctor
+Content-Type: application/json
+
+{
+    "doctorName": "budi"
+}
+
+###
+POST {{url}}/slots/getall
+Content-Type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYWRtaW4iLCJleHAiOjE2ODk3MjU4MjYsImlzcyI6IkNsaW5pY19TZXJ2aWNlIiwiYXVkIjoiQ2xpbmljX1NlcnZpY2UifQ.xvwoz4jRRIXGiuOl8NuPMhk7l2flZ2sTX8QCX3rRmcE
+{
+
+}
+
+###
+POST {{url}}/slots/getavailable
+Content-Type: application/json
+{
+
+}
+
+###
+POST {{url}}/slots/updatereservation
+Content-Type: application/json
+
+{
+   "isReserved": false,
+   "slotId": "11612437-1a47-4c6d-8c2d-9e1cf9f1b3d9" 
+}
+
+###
+POST {{url}}/appointments/book
+Content-Type: application/json
+
+{
+   "patientName": "john",
+   "patientId": "c5e6b69d-31eb-4ebd-be75-909872a9f273",
+   "slotId": 	"60663079-0679-40a7-9080-965a86231042"
+
+}
+
+###
+POST {{url}}/appointments/iscomplete
+Content-Type: application/json
+
+{
+   "isCompleted": true,
+   "Id": "c5e6b69d-31eb-4ebd-be75-909872a9f272"
+
+}
+
+
+###
+POST {{url}}/appointments/nextappointments
+Content-Type: application/json
+
+{
+   "doctorName": "budi"
+}
+
+###
+POST {{url}}/appointments/cancel
+Content-Type: application/json
+
+{
+   "appointmentId": "11e0ff96-1626-494e-b410-c4922bdebcc3"
+}
+
+
+###
+POST {{url}}/slots/upcomings
+Content-Type: application/json
+
+{
+   "doctorName": "budi"
+}
+
+###
+POST {{url}}/slots/delete
+Content-Type: application/json
+
+{
+   "slotid": "088795fe-b360-4a47-b600-d66172fddef7"
+}
+
+###
+POST {{url}}/login
+Content-Type: application/json
+
+{
+  "UserName": "admin"
+}
+

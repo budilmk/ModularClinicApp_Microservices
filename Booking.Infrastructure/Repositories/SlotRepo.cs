@@ -1,11 +1,9 @@
 ﻿using Booking.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
-using System.Diagnostics.Eventing.Reader;
-using ClinicApp.Database;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.Http.HttpResults;
+using Booking.Infrastructure.Database;
+using Booking.Domain.Contracts;
 
-namespace ClinicApp.Repositories;
+
+namespace Booking.Infrastructure.Repositories;
 
 public class SlotRepo : ISlotRepository
 {

@@ -1,13 +1,13 @@
-﻿using ClinicApp.Controllers.Dtos;
-using ClinicApp.Services;
+﻿using Booking.Application.Dtos;
+using Booking.Shared;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace ClinicApp.Controllers
+namespace Booking.API.Controllers
 {
+    [ApiController]
     [Route("/slots")]
-    [Authorize]
     public class SlotController : ControllerBase
     {
         private readonly ISlotService _slotService;

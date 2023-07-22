@@ -1,8 +1,8 @@
-﻿using ClinicApp.Entities;
+﻿using Booking.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace ClinicApp.Database;
+namespace Booking.Infrastructure.Database;
 
 public class SlotConfig : IEntityTypeConfiguration<Slot>
 {

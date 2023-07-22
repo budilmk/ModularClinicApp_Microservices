@@ -1,9 +1,10 @@
-﻿using ClinicApp.Services;
+﻿using Booking.API.Services;
+using Booking.Shared;
 using Microsoft.AspNetCore.Mvc;
-using ClinicApp.Controllers.Dtos;
+using Booking.Application.Dtos;
 using Microsoft.Extensions.Logging;
 
-namespace ClinicApp.Controllers
+namespace Booking.API.Controllers
 {
     [Route("/appointments")]
     public class AppointmentController : ControllerBase

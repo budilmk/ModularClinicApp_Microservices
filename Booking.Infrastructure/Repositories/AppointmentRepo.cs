@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Booking.Domain.Contracts;
+using Booking.Domain.Entities;
+using Booking.Infrastructure.Database;
 
 namespace Booking.Infrastructure.Repositories;
 

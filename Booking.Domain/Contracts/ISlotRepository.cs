@@ -1,6 +1,6 @@
 ﻿using Booking.Domain.Entities;
 
-namespace ClinicApp.Repositories
+namespace Booking.Domain.Contracts
 {
     public interface ISlotRepository
     {

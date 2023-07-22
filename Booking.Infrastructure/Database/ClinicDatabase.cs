@@ -1,6 +1,9 @@
 ﻿using Booking.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-namespace ClinicApp.Database;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace Booking.Infrastructure.Database;
 
 public class ClinicAppDatabase : DbContext
 {
@@ -22,7 +25,7 @@ public class ClinicAppDatabase : DbContext
         modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
     }
 }
-public static class DbExtension
+public static class Extensions
 {
     public static IServiceCollection AddClinicAppDb(this IServiceCollection services, IConfiguration configuration)
     {
