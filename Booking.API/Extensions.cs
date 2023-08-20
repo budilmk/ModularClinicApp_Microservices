@@ -7,6 +7,7 @@ using SlotManagement.Repositories;
 using Booking.Infrastructure.Database;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Notification.Module;
 
 namespace Booking.API;
 
@@ -17,6 +18,7 @@ public static class Extensions
         services.AddTransient<ISlotService, SlotService>()
                 .AddTransient<ISlotRepository, SlotRepo>()
                 .AddTransient<IAppointmentService, AppointmentService>()
+                .AddTransient<INotificationService, NotificationService>()
                 .AddTransient<IAppointmentRepo, AppointmentRepo>();
 
         return services;
