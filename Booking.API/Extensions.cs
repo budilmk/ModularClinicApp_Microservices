@@ -8,6 +8,8 @@ using Booking.Infrastructure.Database;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Notification.Module;
+using Booking.Application.Contracts;
+using Booking.Infrastructure;
 
 namespace Booking.API;
 
@@ -19,6 +21,7 @@ public static class Extensions
                 .AddTransient<ISlotRepository, SlotRepo>()
                 .AddTransient<IAppointmentService, AppointmentService>()
                 .AddTransient<INotificationService, NotificationService>()
+                .AddTransient<IBookPublisher, RabbitMQBookingPublisher>()
                 .AddTransient<IAppointmentRepo, AppointmentRepo>();
 
         return services;

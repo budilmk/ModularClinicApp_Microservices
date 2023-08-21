@@ -5,6 +5,7 @@ using Booking.Application.Dtos;
 using SlotManagement.Services;
 using Microsoft.Extensions.Logging;
 using Notification.Module;
+using Booking.Application.UseCases;
 
 namespace Booking.API.Controllers
 {
@@ -15,13 +16,15 @@ namespace Booking.API.Controllers
         private readonly ISlotService _slotService;
         private readonly INotificationService _notificationService;
         private readonly ILogger<AppointmentController> _logger;
+        private readonly BookAppointment _bookAppointment;
 
-        public AppointmentController(IAppointmentService appointmentService, ISlotService slotService, INotificationService notificationService, ILogger<AppointmentController> logger)
+        public AppointmentController(IAppointmentService appointmentService, ISlotService slotService, INotificationService notificationService, ILogger<AppointmentController> logger, BookAppointment bookAppointment)
         {
             _appointmentService = appointmentService;
             _slotService = slotService;
             _logger = logger;
             _notificationService = notificationService;
+            _bookAppointment = bookAppointment;
         }
 
         //Question 2b To book an appointment and update slot reservation status
@@ -32,6 +35,14 @@ namespace Booking.API.Controllers
             await _slotService.UpdateSlotReservation(true, request.slotId); //update slot status to true
             await _notificationService.CreateNotification(request.patientName, request.slotId);
 
+
+            return Ok("Appointment Created...");
+        }
+
+        [HttpPost("/appointments/book1")]
+        public async Task<IActionResult> BookAppointment([FromBody] CreateAppointmentRequest request)
+        {
+            var slotId = await _bookAppointment.Execute(request);
 
             return Ok("Appointment Created...");
         }

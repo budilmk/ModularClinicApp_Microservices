@@ -1,4 +1,4 @@
-﻿namespace Booking.Infrastructure
+﻿namespace Shared.Core
 {
     public class Class1
     {

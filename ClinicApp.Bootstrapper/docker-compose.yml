@@ -1,0 +1,51 @@
+﻿services:
+    postgres:
+        image: "postgres:15.4-bullseye"
+        container_name: "postgres_from_compose"
+        user: "postgres"
+        restart: always
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: admin
+        ports:
+            - "5435:5432"
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready"]
+            interval: 30s
+            timeout: 60s
+            retries: 5
+            start_period: 80s 
+    adminer:
+        image: adminer
+        container_name: "adminer_from_compose"
+        restart: always
+        ports:
+            - 8080:8080
+        depends_on:
+            postgres:
+                condition: service_healthy
+    clinicapp:
+        image: "clinicapp:latest"
+        container_name: "clinicapp_from_compose"
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Docker
+        ports:
+            - 5053:80
+        depends_on:
+            rabbitmq:
+                condition: service_healthy
+            postgres:
+                condition: service_healthy
+        links:
+            - rabbitmq
+    rabbitmq:
+        image: "rabbitmq:3.12-management"
+        container_name: "rabbitmq_from_compose"
+        ports:
+            - 5672:5672
+            - 15672:15672
+        healthcheck:
+            test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+            interval: 30s
+            timeout: 10s
+            retries: 5

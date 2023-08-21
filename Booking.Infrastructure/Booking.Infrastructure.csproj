@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Authentication.API\Authentication.API.csproj" />
+    <ProjectReference Include="..\Booking.Application\Booking.Application.csproj" />
     <ProjectReference Include="..\Booking.Domain\Booking.Domain.csproj" />
     <ProjectReference Include="..\Booking.Shared\Booking.Shared.csproj" />
   </ItemGroup>
