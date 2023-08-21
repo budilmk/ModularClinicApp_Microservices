@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -8,7 +8,9 @@
 
   <ItemGroup>
     <PackageReference Include="Convey.MessageBrokers" Version="1.1.448" />
+    <PackageReference Include="Convey.MessageBrokers.RabbitMQ" Version="1.1.448" />
     <PackageReference Include="MediatR" Version="12.1.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
   </ItemGroup>
 
 </Project>
