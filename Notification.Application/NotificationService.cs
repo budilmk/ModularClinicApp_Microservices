@@ -1,6 +1,8 @@
 ﻿
 using SlotManagement.Services;
 using Microsoft.Extensions.Logging;
+using Booking.Shared.Events;
+using Booking.Domain.Entities;
 
 namespace Notification.Module
 {
@@ -22,7 +24,13 @@ namespace Notification.Module
 
         }
 
-   
+        public Task Handle(NewAppointmentBookedEventDto notification)
+        {
+            //_logger.LogInformation("Patient Name: ${PatientName}", notification.patientName);
+            //_logger.LogInformation("Doctor Name: " + _slotService.GetDoctorNameBySlotId(slotId));
+            //_logger.LogInformation("Appointment Time: ${Time}", _slotService.GetAppointmentTimeBySlotId(slotId));
+            return Task.CompletedTask;
 
+        }
     }
 }
