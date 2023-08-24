@@ -5,7 +5,7 @@ POST {{url}}/slots
 Content-Type: application/json
 
 {
-    "time": "31/8/2023 05:30:00",
+    "time": "02/9/2023 05:30:00",
     "doctorName": "budi",
     "doctorId": "4ceaa21b-c582-429b-a314-cf32275b1f4a",
     "cost": 500

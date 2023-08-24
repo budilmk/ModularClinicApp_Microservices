@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Booking.Application.Dtos;
 using SlotManagement.Services;
 using Microsoft.Extensions.Logging;
-using Notification.Module;
 using Booking.Application.UseCases;
+using Notification.Application;
 
 namespace Booking.API.Controllers
 {

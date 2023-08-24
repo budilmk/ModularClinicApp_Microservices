@@ -1,10 +1,10 @@
 ﻿using Booking.Shared.Events;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using Notification.Module;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Runtime.InteropServices;
 using Convey.MessageBrokers.RabbitMQ;
+using Notification.Application;
 
 namespace Notification.API
 {

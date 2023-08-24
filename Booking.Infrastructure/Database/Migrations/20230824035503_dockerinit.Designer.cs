@@ -11,9 +11,9 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Booking.Infrastructure.Database
 {
-    [DbContext(typeof(ClinicAppDatabase))]
-    [Migration("20230821101642_Init")]
-    partial class Init
+    [DbContext(typeof(ClinicDatabase))]
+    [Migration("20230824035503_dockerinit")]
+    partial class dockerinit
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

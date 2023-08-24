@@ -7,9 +7,9 @@ using SlotManagement.Repositories;
 using Booking.Infrastructure.Database;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using Notification.Module;
 using Booking.Application.Contracts;
 using Booking.Infrastructure;
+using Notification.Application;
 
 namespace Booking.API;
 

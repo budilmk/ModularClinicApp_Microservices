@@ -7,9 +7,9 @@ namespace Booking.Infrastructure.Repositories;
 
 public class AppointmentRepo : IAppointmentRepo
 {
-    private ClinicAppDatabase _db;
+    private ClinicDatabase _db;
 
-    public AppointmentRepo(ClinicAppDatabase db)
+    public AppointmentRepo(ClinicDatabase db)
     {
         _db = db;
     }

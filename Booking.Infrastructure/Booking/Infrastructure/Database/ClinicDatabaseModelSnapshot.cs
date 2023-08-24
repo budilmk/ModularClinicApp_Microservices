@@ -10,8 +10,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Booking.Infrastructure.Database
 {
-    [DbContext(typeof(ClinicAppDatabase))]
-    partial class ClinicAppDatabaseModelSnapshot : ModelSnapshot
+    [DbContext(typeof(ClinicDatabase))]
+    partial class ClinicDatabaseModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

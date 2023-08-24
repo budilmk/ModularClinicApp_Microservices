@@ -16,6 +16,7 @@ COPY ["Shared.Core/Shared.Core.csproj", "Shared.Core/"]
 COPY ["Booking.Infrastructure/Booking.Infrastructure.csproj", "Booking.Infrastructure/"]
 COPY ["Notification.Application/Notification.Application.csproj", "Notification.Application/"]
 COPY ["SlotManagement/SlotManagement.csproj", "SlotManagement/"]
+COPY ["Notification.API/Notification.API.csproj", "Notification.API/"]
 RUN dotnet restore "ClinicApp.Bootstrapper/ClinicApp.Bootstrapper.csproj"
 COPY . .
 WORKDIR "/src/ClinicApp.Bootstrapper"

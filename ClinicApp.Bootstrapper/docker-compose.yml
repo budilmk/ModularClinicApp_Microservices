@@ -2,7 +2,7 @@
     postgres:
         image: "postgres:15.4-bullseye"
         container_name: "postgres_from_compose"
-        user: "postgres"
+        user: postgres
         restart: always
         environment:
             POSTGRES_USER: postgres
@@ -25,10 +25,10 @@
             postgres:
                 condition: service_healthy
     clinicapp:
-        image: "clinicapp:latest"
+        image: "clinicapp:v4"
         container_name: "clinicapp_from_compose"
         environment:
-            - ASPNETCORE_ENVIRONMENT=Docker
+            - ASPNETCORE_ENVIRONMENT=Development.Docker
         ports:
             - 5053:80
         depends_on:
@@ -36,8 +36,18 @@
                 condition: service_healthy
             postgres:
                 condition: service_healthy
-        links:
-            - rabbitmq
+    notificationapp:
+        image: "notificationapp:latest"
+        container_name: "notificationapp_from_compose"
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Docker
+        ports:
+            - 5232:80
+        depends_on:
+            rabbitmq:
+                condition: service_healthy
+            postgres:
+                condition: service_healthy
     rabbitmq:
         image: "rabbitmq:3.12-management"
         container_name: "rabbitmq_from_compose"
