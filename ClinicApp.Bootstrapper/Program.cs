@@ -23,7 +23,7 @@ builder.Services.AddHttpLogging(options =>
 
 builder.Services
     .AddBookingModule()
-    .AddNotificationModule()
+    //.AddNotificationModule()
     .AddClinicAppDb(builder.Configuration)
     .AddAuthenticationModule(builder.Configuration)
     .AddConvey().AddRabbitMq();
@@ -31,7 +31,7 @@ builder.Services
 
 builder.Services.AddControllers();
 var app = builder.Build();
-app.UseNotificationModule();
+//app.UseNotificationModule();
 app.MapGet("/", () => "Modular ClinicApp!");
 app.MapControllers();
 

@@ -1,5 +1,4 @@
-﻿@url = http://localhost:5052
-
+﻿@url = http://localhost:5053
 ###
 POST {{url}}/slots
 Content-Type: application/json
@@ -18,7 +17,7 @@ Content-Type: application/json
 {
     "patientName": "John",
     "PatientId": "4ceaa21b-c582-429b-a314-cf32275b1f4b",
-    "slotId": "11612437-1a47-4c6d-8c2d-9e1cf9f1b3d9"
+    "slotId": "44a0291b-f9aa-43db-af45-e3fcc8961e81"
 }
 
 ###
@@ -54,13 +53,13 @@ Content-Type: application/json
 }
 
 ###
-POST {{url}}/appointments/book
+POST {{url}}/appointments/book1
 Content-Type: application/json
 
 {
    "patientName": "john",
    "patientId": "c5e6b69d-31eb-4ebd-be75-909872a9f273",
-   "slotId": 	"0b337cde-bbba-4a83-9c59-5600f874ee02"
+   "slotId": 	"019b8db0-71c1-4404-923e-03fa5868fc03"
 
 }
 

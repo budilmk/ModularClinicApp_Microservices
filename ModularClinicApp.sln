@@ -43,6 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification.API", "Notific
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification.Bootstrapper", "Notification.Bootstrapper\Notification.Bootstrapper.csproj", "{8F7015FD-DDD7-4749-92DC-10227B304E73}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kubernetes", "Kubernetes", "{517F13F4-650F-44D5-8C8F-1B02226B58E5}"
+	ProjectSection(SolutionItems) = preProject
+		ClinicApp-Deployment.yaml = ClinicApp-Deployment.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

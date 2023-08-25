@@ -25,7 +25,7 @@
             postgres:
                 condition: service_healthy
     clinicapp:
-        image: "clinicapp:v4"
+        image: "clinicapp:v7"
         container_name: "clinicapp_from_compose"
         environment:
             - ASPNETCORE_ENVIRONMENT=Development.Docker

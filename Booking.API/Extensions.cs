@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Booking.Application.Contracts;
 using Booking.Infrastructure;
 using Notification.Application;
+using Booking.Application.UseCases;
 
 namespace Booking.API;
 
@@ -22,6 +23,7 @@ public static class Extensions
                 .AddTransient<IAppointmentService, AppointmentService>()
                 .AddTransient<INotificationService, NotificationService>()
                 .AddTransient<IBookPublisher, RabbitMQBookingPublisher>()
+                .AddTransient<BookAppointment>()
                 .AddTransient<IAppointmentRepo, AppointmentRepo>();
 
         return services;

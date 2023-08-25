@@ -5,6 +5,8 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Runtime.InteropServices;
 using Convey.MessageBrokers.RabbitMQ;
 using Notification.Application;
+using SlotManagement.Services;
+using SlotManagement.Repositories;
 
 namespace Notification.API
 {
@@ -13,6 +15,8 @@ namespace Notification.API
         public static IServiceCollection AddNotificationModule(this IServiceCollection services)
         {
             services.AddTransient<INotificationService, NotificationService>();
+            services.AddTransient<ISlotService, SlotService>();
+            services.AddTransient<ISlotRepository, SlotRepo>();
 
             return services;
         }
